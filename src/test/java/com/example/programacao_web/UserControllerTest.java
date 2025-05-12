@@ -1,7 +1,7 @@
 package com.example.programacao_web;
 
-import com.example.programacao_web.user.models.User;
-import com.example.programacao_web.user.repository.UserRepository;
+import com.example.programacao_web.server.models.User;
+import com.example.programacao_web.server.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
@@ -40,9 +40,7 @@ public class UserControllerTest {
 
     private  User getUser() {
         User user = new User();
-        user.setUserName("test");
         user.setPassword("test");
-        user.setDisplayName("test");
         return user;
     }
 }
